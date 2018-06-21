@@ -1,5 +1,5 @@
 node {
-    def server = Artifactory.newServer url: http://192.168.56.10:8081/artifactory, credentialsId: ARTIFACTORY_JENKINS_API_KEY 
+    def server = Artifactory.newServer url: 'http://192.168.56.10:8081/artifactory', credentialsId: ARTIFACTORY_JENKINS_API_KEY 
     def rtGradle = Artifactory.newGradleBuild()
     def buildInfo = Artifactory.newBuildInfo()
 
